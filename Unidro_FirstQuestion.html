@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://quera.ir/contest/assignments/31720/problems/104013 -->
+<html lang="fa" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+    
+        ماین‌پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera
+    
+</title>
+    <meta name="description" content="
+    
+        سوال شغل جدید در مسابقه برنامه‌نویسی ماین‌پرابلم یونیدرو (تحلیل داده)  فرصتی برای افزایش توانایی برنامه‌نویسی و
+        تفکر الگوریتمی می‌باشد.
+    
+">
+
+    
+    <meta name="fontiran.com:license" content="56AXFY">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta property="og:site_name" content="Quera">
+    
+        <meta property="og:title" content="Quera">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://static.quera.ir/images/logo/logo-q.0-191a914662ba.png">
+        
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="https://static.quera.ir/images/logo/favicon/apple-touch-icon.0-2887f2aad086.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://static.quera.ir/images/logo/favicon/favicon-32x32.0-b5be5ba884c5.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://static.quera.ir/images/logo/favicon/favicon-16x16.0-4bcbe4f363d7.png">
+        <link rel="manifest" href="https://static.quera.ir/images/logo/favicon/site.0-a58f0dbbf828.webmanifest">
+        <link rel="mask-icon" href="https://static.quera.ir/images/logo/favicon/safari-pinned-tab.0-c497e3a2ff0f.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="https://static.quera.ir/images/logo/favicon/favicon.0-53ba381ba55d.ico">
+        <meta name="apple-mobile-web-app-title" content="Quera">
+        <meta name="application-name" content="Quera">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="https://static.quera.ir/images/logo/favicon/browserconfig.0-158c579223ae.xml">
+        <meta name="theme-color" content="#09c">
+    
+    
+
+
+<script type="text/javascript" async="" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/analytics.js.download"></script><script type="text/javascript" async="" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/js"></script><script id="ua-script-yn-3147-adv" data-analyticsobject="yektanet" async="" type="text/javascript" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/rg.complete.js.download"></script><script type="text/javascript" async="" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/hotjar-2000069.js.download"></script><script type="text/javascript" async="" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/analytics.js.download"></script><script type="text/javascript" async="" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/js(1)"></script><script async="" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/pendo.js.download"></script><script async="" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/gtm.js.download"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TDRQP6V');</script>
+
+
+    <script type="text/javascript" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/reverse.0-a9f22a3b5c94.js.download"></script>
+    <link rel="stylesheet" href="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/jquery-ui.min.0-e43e763e0745.css">
+    <script type="text/javascript" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/common.min.0-ff5d1031dabd.js.download"></script>
+    <link rel="stylesheet" type="text/css" href="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/common.min.0-c21277d78369.css">
+    <link rel="stylesheet" type="text/css" href="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/semantic.rtl.min.0-d12cdace827d.css">
+    <link rel="stylesheet" type="text/css" href="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/style.0-06c803196538.css">
+    <link rel="stylesheet" type="text/css" href="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/style.0-b3ef4156e542.css">
+    <link rel="preload" href="https://static.quera.ir/fonts/iranyekan/fonts/woff2/IRANYekanWebRegular.0-9b47f3164ee9.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://static.quera.ir/fonts/iranyekan/fonts/woff2/IRANYekanWebBold.0-980f51e04b7c.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://static.quera.ir/fonts/iranyekan/fonts/woff2/IRANYekanWebLight.0-1a7cfbfeabaf.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://static.quera.ir/fonts/iranyekan/fonts/woff2/IRANYekanWebMedium.0-3c3b4ec2f970.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://static.quera.ir/vendor/semantic/themes/default/assets/fonts/icons.0-0ab54153eeec.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://static.quera.ir/vendor/semantic/themes/default/assets/fonts/brand-icons.0-e8c322de9658.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <script type="text/javascript" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/main.0-ef7ccb650ad2.js.download"></script>
+    <script type="text/javascript" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/notebook.0-0977237e3727.js.download"></script>
+    <script type="text/javascript" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/markdown-moratab.0-cdb42d00be50.js.download"></script>
+    <script src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/clipboard.min.0-f06c52bfddb4.js.download" type="text/javascript"></script>
+    <script src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/prism.min.0-683a0944f523.js.download" data-manual=""></script>
+    <link rel="stylesheet" type="text/css" href="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/prism.0-4fa8005e6de1.css">
+    <script src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/notify.0-adeb6bd4d98d.js.download" type="text/javascript"></script>
+    <link rel="stylesheet" href="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/katex.min.0-f624f07ae925.css">
+    
+        <script>
+    const pendoApiKey = "3be06675-582d-4b57-7ae9-20805968b474" || null;
+    const pendoVisitorID = "Mjg0NTUyODQ1NTI4NDU1MhMrFojcnGpDb62ID0OQjtU=" || null;
+    // console.log("***", {pendoApiKey, pendoVisitorID});
+    if (pendoApiKey && pendoVisitorID) {
+        (function (apiKey) {
+            (function (p, e, n, d, o) {
+                var v, w, x, y, z;
+                o = p[d] = p[d] || {};
+                o._q = o._q || [];
+                v = ['initialize', 'identify', 'updateOptions', 'pageLoad', 'track'];
+                for (w = 0, x = v.length; w < x; ++w) (function (m) {
+                    o[m] = o[m] || function () {
+                        o._q[m === v[0] ? 'unshift' : 'push']([m].concat([].slice.call(arguments, 0)));
+                    };
+                })(v[w]);
+                y = e.createElement(n);
+                y.async = !0;
+                y.src = 'https://cdn.pendo.io/agent/static/' + apiKey + '/pendo.js';
+                z = e.getElementsByTagName(n)[0];
+                z.parentNode.insertBefore(y, z);
+            })(window, document, 'script', 'pendo');
+
+            // Call this whenever information about your visitors becomes available
+            // Please use Strings, Numbers, or Bools for value types.
+            pendo.initialize({
+                visitor: {
+                    id: pendoVisitorID   // Required if user is logged in
+                    // email:        // Recommended if using Pendo Feedback, or NPS Email
+                    // full_name:    // Recommended if using Pendo Feedback
+                    // role:         // Optional
+
+                    // You can add any additional visitor level key-values here,
+                    // as long as it's not one of the above reserved names.
+                },
+
+                account: {
+                    id: pendoVisitorID // Highly recommended
+                    // name:         // Optional
+                    // is_paying:    // Recommended if using Pendo Feedback
+                    // monthly_value:// Recommended if using Pendo Feedback
+                    // planLevel:    // Optional
+                    // planPrice:    // Optional
+                    // creationDate: // Optional
+
+                    // You can add any additional account level key-values here,
+                    // as long as it's not one of the above reserved names.
+                }
+            });
+        })(pendoApiKey);  // '20d7851e-9124-4b79-6701-5b9f82641576'
+    }
+</script>
+
+    
+    
+
+    
+    <script type="text/javascript" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/runtime.0-f8d701a497b3.js.download"></script><script type="text/javascript" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/3935.0-ebc352e54079.js.download"></script><script type="text/javascript" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/qtimer.0-3b3a71166ce4.js.download"></script><style>div.style__time_block___1T0mR{line-height:1;display:inline-block;text-align:center;padding:0 .3em}span.style__countdown_num___26IHd{font-size:1em}span.style__time_label___1qGrh{font-size:calc(5px + 0.35em)}</style>
+    <link rel="stylesheet" type="text/css" href="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/style.0-04b8d1902e0f.css">
+
+    <style>
+        
+            #qu-scroll {
+                min-width: 1024px;
+            }
+            body {
+                overflow-x: auto !important;
+            }
+            #body_container {
+                display: flex;
+            }
+            #a-container {
+                width: calc(100% - 250px);
+                padding: 2em;
+                background-color: #eee;
+            }
+        
+    </style>
+    
+    <style>.khUjYA0y1d8MBUMez81cV{color:#666;padding:0 1em}._3YYdp0YwWPHw5SLZFG_Heq{align-items:center}._3YYdp0YwWPHw5SLZFG_Heq .meta{display:flex;flex-direction:column;margin-inline-start:1em;line-height:1.5;min-width:0;overflow:hidden;text-overflow:ellipsis;align-items:flex-start}._3YYdp0YwWPHw5SLZFG_Heq .meta span{color:#707070;font-size:.8em;margin-top:.2em;overflow:hidden;text-overflow:ellipsis}._1D_K-Nzkb9U9lVULBaEBFh{border-radius:500px;display:block}._10QkuwgglYYXaHr27ZQP-g{display:inline-block;height:1em;opacity:.5}._35X9uIDO-ZW6_Zz8EpdGs_{cursor:pointer;display:flex;align-items:center}</style><style>._2ZtZGyAbcfG9v7cSEZP68E{background:var(--colors-primary);color:#fff;border-radius:.4em;padding:.57em 1.2em;font-weight:700;text-decoration:none;line-height:1;margin-inline-start:.5em}._2ZtZGyAbcfG9v7cSEZP68E:hover{color:#fff;background:var(--colors-primary-hover)}._2ZtZGyAbcfG9v7cSEZP68E._2bmNhyDIkuyCCGt00A-vsb{background:transparent;color:var(--colors-primary);border:1px solid var(--colors-primary)}</style><style>._3ITFPh4iiQABl551TgUhid{height:100%;display:flex;align-items:stretch;cursor:pointer}._3ITFPh4iiQABl551TgUhid:hover{background:rgba(0,0,0,.03)}._3ITFPh4iiQABl551TgUhid.active{background:rgba(0,0,0,.05)}._3ITFPh4iiQABl551TgUhid.active .menu{display:block}._3ITFPh4iiQABl551TgUhid .content{padding:0 .6em;display:flex;align-items:center}._3ITFPh4iiQABl551TgUhid .menu{display:none;position:absolute;max-width:100%;width:270px;top:100%;left:0;background:#fff;box-shadow:0 2px 3px 0 rgba(0,0,0,.16);border:1px solid rgba(34,36,38,.15);border-radius:0 0 .5em .5em;z-index:1010;cursor:initial}._3ITFPh4iiQABl551TgUhid .menu .divider{margin:.3em 0;border-top:1px solid var(--colors-border)}._3ITFPh4iiQABl551TgUhid .menu .item{display:block;padding:.65em 1.15em;white-space:nowrap;line-height:1.5;color:inherit;overflow-x:hidden;text-overflow:ellipsis}._3ITFPh4iiQABl551TgUhid .menu .item.flex{display:flex;align-items:center}._3ITFPh4iiQABl551TgUhid .menu .item.link{cursor:pointer}._3ITFPh4iiQABl551TgUhid .menu .item.link:hover{background:rgba(0,0,0,.05)}@media(max-width: 768px){._3ITFPh4iiQABl551TgUhid .menu{width:100% !important;border-right:none;border-left:none;border-radius:0}}</style><style>._3H2AA-UQYfLjzK-JUo1guo{position:relative;font-size:10px}._7fyP8wy9OUuM7Uep3pp_s{position:absolute;top:.2em;right:1.7em;width:.8em;height:.8em;background:#dc4040;border-radius:500px}._3dvpr2_KowOvneiiezm3XM{padding:2em 0;text-align:center}._3dvpr2_KowOvneiiezm3XM p{margin-top:.5em;line-height:2}._3dvpr2_KowOvneiiezm3XM a{color:var(--colors-primary)}._1sZ3HtZvdTtFsqAysj8TiB a{padding:1em;display:block;color:inherit;border-bottom:1px solid var(--colors-border)}._1sZ3HtZvdTtFsqAysj8TiB a:hover{background:rgba(0,0,0,.03)}._1sZ3HtZvdTtFsqAysj8TiB a:hover .header{color:var(--colors-primary)}._1sZ3HtZvdTtFsqAysj8TiB a .timestamp{float:left;margin-right:.5em}._1sZ3HtZvdTtFsqAysj8TiB a .header{font-weight:700;font-size:1.1em;line-height:1.5}._1sZ3HtZvdTtFsqAysj8TiB a .description{font-size:.9em;margin-top:.5em;line-height:1.4}._1A9IV7qvMZtgc22XcKCRKk{display:block;line-height:2.5;text-align:center}</style><script async="" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/modules.189ddfe225c89657c20d.js.download" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><script type="text/javascript" async="" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/3be06675-582d-4b57-7ae9-20805968b474"></script></head><body dir="rtl" style="" data-new-gr-c-s-check-loaded="14.1027.0" data-gr-ext-installed=""><div class="ui modal" id="percent-help-modal">
+    <div class="header">راهنمای متغیرها (درصدها)</div>
+    <div class="content ui">
+        <ul class="moratab_help_list">
+            <li>
+                <h3>%problem.limits%</h3>
+                <p>برای نمایش جدول محدودیت زمان و حافظه مربوط به این سوال، این درصد را در صورت سوال اضافه کنید.</p>
+            </li>
+            <li>
+                <h3>%problem.limits_{language}%</h3>
+                <p>برای نمایش محدودیت زمان و حافظه برای یک زبان خاص مربوط به این سوال، این درصد را به صورت سوال اضافه کنید. دقت شود که باید {language} را با زبان مورد نظر جایگزین کنید. بعنوان مثال برای نمایش محدودیت زبان پایتون باید <span style="unicode-bidi: plaintext">%problem.limits_Python 3.8%</span> را استفاده کنید.</p>
+            </li>
+            <li>
+                <h3>%problem.video_arvan_{video_id}%</h3>
+                <p>برای نمایش یک ویدئو از ابر آروان کافیست شناسه ویدئو را بجای {video_id} قرار دهید و این درصد را به صورت سوال خود اضافه کنید.</p>
+                <p>
+                    <i class="exclamation triangle icon"></i>
+                    ویدئوی مورد نظر باید در کانال کوئرا در آروان بارگذاری شده باشد و برای کانال‌های غیره کار نخواهد کرد.
+                </p>
+            </li>
+            <li>
+                <h3>%problem.initial_project%</h3>
+                <p>برای اینکه کاربران بتوانند فایل پروژه اولیه سوال را دانلود کنند، باید این درصد را در صورت سوال قرار دهید.</p>
+            </li>
+            <li>
+                <h3>%problem.test_{test_id}%</h3>
+                <p>برای نمایش نمونه ورودی و خروجی بر اساس فایل تست پروژه، باید از این درصد استفاده کنید. توجه کنید که باید {test_id} را با شناسه تست مورد نظر جایگزین کنید.</p>
+            </li>
+            <li>
+                <h3>%problem.test_{type}_{test_id}%</h3>
+                <p>برای نمایش نمونه ورودی و یا خروجی بر اساس فایل تست پروژه، باید از این درصد استفاده کنید. توجه کنید که
+                    {type} می تواند یکی از دو مقدار input و یا output باشد. همچنین باید {test_id} را با شناسه تست مورد نظر جایگزین کنید.</p>
+            </li>
+            <li>
+                <h3>%video.aparat_{video_id}%</h3>
+                <p>برای نمایش یک ویدئو از ویدئوهای عمومی در آپارات کافیست شناسه ویدئو را بجای {video_id} قرار دهید و این درصد را به صورت سوال خود اضافه کنید.</p>
+            </li>
+            <li>
+                <h3>%meet.skyroom_{room_id}%</h3>
+                <p>برای نمایش یک جلسه از skyroom شناسه جلسه را بجای {room_id} قرار دهید و این درصد را به صورت سوال خود اضافه کنید.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="actions">
+        <div class="ui close deny basic button">بستن</div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        $(".wmd-buttons").ready(addModalButtonToEditorMenu);
+    });
+
+    function addModalButtonToEditorMenu() {
+        const listItem = document.createElement("li");
+        listItem.className = "wmd-button btn"
+        listItem.id = "wmd-percent-help-button"
+        listItem.title = "راهنمای متغیرها (درصدها)"
+        listItem.innerHTML = '<i class="small circular percent inverted icon"></i>'
+        document.querySelector(".btn-group4").appendChild(listItem);
+        document.getElementById("wmd-percent-help-button").addEventListener("click", () => {
+            $("#percent-help-modal").modal("show");
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDRQP6V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+
+    
+
+<div class="pusher" id="qu-scroll">
+    
+    
+        
+
+<link rel="stylesheet" href="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/global.0-2ade4df8e1dc.css"><header id="qnav" class="fluid "><div id="qnav__container"><div class="show-in-mobile" id="qnav__burger"><div class="_3ITFPh4iiQABl551TgUhid "><div class="content" tabindex="0"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" style="font-size: 2em; z-index: 1010;"><path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"></path></svg></div><div class="menu"><a class="item link" href="https://quera.ir/overview/">سامانه آموزشی</a><a class="item link" href="https://quera.ir/college/">کالج</a><a class="item link" href="https://quera.ir/problemset/contest">بانک سؤالات</a><a class="item link" href="https://quera.ir/contest/">مسابقات</a><a class="item link" href="https://quera.ir/magnet/jobs">مگنت (استخدام)</a></div></div></div><div id="qnav__logo" class="qnav-center"><a href="https://quera.ir/"><img class="logo" id="logo" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/logo-quera-heavy.0-1c1287ee3575.svg" alt="Quera"></a></div><div id="qnav__rightmenu"><a class="" href="https://quera.ir/overview/">سامانه آموزشی</a><a class="" href="https://quera.ir/college/">کالج</a><a class="" href="https://quera.ir/problemset/contest">بانک سؤالات</a><a class="" href="https://quera.ir/contest/">مسابقات</a><a class="" href="https://quera.ir/magnet/jobs">مگنت (استخدام)</a></div><div style="flex: 1"></div><div id="qnav__leftmenu"><div class="_3ITFPh4iiQABl551TgUhid "><div class="content" tabindex="0"><div class="_3H2AA-UQYfLjzK-JUo1guo"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" style="font-size: 3em; display: block;"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M427.68 351.43C402 320 383.87 304 383.87 217.35 383.87 138 343.35 109.73 310 96c-4.43-1.82-8.6-6-9.95-10.55C294.2 65.54 277.8 48 256 48s-38.21 17.55-44 37.47c-1.35 4.6-5.52 8.71-9.95 10.53-33.39 13.75-73.87 41.92-73.87 121.35C128.13 304 110 320 84.32 351.43 73.68 364.45 83 384 101.61 384h308.88c18.51 0 27.77-19.61 17.19-32.57zM320 384v16a64 64 0 01-128 0v-16"></path></svg></div></div><div class="menu" style="width: 28em; font-size: 12px;"><div class="_1sZ3HtZvdTtFsqAysj8TiB"><a href="https://quera.ir/notifications/click/768505" target="_blank" rel="noopener"><div class="timestamp">۲۰ اسفند ۱۳۹۸</div><div class="header">اخبار جدید کوئرا کالج را در بلاگ کوئرا بخوانید</div><div class="description">فرصت‌هاش ویژه‌ی شغلی Quera Career Days برای افرادی که دوره‌های کوئرا کالج را تمام کرده‌اند، و امکان تمدید زمان دوره‌ها</div></a><a target="_blank" rel="noopener"><div class="timestamp">۲۸ دی ۱۳۹۸</div><div class="header">اضافه شدن ایموجی به فرصت‌های شغلی</div><div class="description">از این پس می‌توانید با استفاده از ایموجی در صفحه‌ی هر فرصت شغلی، احساستان را راجع به آن با سایر توسعه‌دهندگان به اشتراک بگذارید!</div></a><a href="https://quera.ir/notifications/click/626731" target="_blank" rel="noopener"><div class="timestamp">۲۴ دی ۱۳۹۸</div><div class="header">دریافت هفتگی فرصت‌های  شغلی مرتبط</div><div class="description">از این پس می‌توانید فرصت‌های شغلی مرتبط با علاقه‌مندی‌هایتان را به صورت هفتگی و از طریق ایمیل دریافت کنید؛ برای فعال‌سازی کلیک کنید!</div></a></div><a class="_1A9IV7qvMZtgc22XcKCRKk" href="https://quera.ir/notifications">مشاهده همه اعلان‌ها</a></div></div><div class="_3ITFPh4iiQABl551TgUhid "><div class="content" tabindex="0"><img class="_1D_K-Nzkb9U9lVULBaEBFh" alt="سید محمد امین دادگر" width="40" height="40" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/98cd9dee08b00b60273343a0ed68db91.jpg"></div><div class="menu"><div class="item flex _3YYdp0YwWPHw5SLZFG_Heq"><img class="_1D_K-Nzkb9U9lVULBaEBFh" alt="Quera" width="50" height="50" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/98cd9dee08b00b60273343a0ed68db91.jpg"><div class="meta"><b>سید محمد امین دادگر</b><span dir="ltr" title="dadgaramin96@gmail.com">dadgaramin96@gmail.com</span></div></div><a class="item link" href="https://quera.ir/dashboard">داشبورد توسعه‌دهنده</a><a class="item link" href="https://quera.ir/profile/jcrd36">پروفایل عمومی</a><a class="item link" href="https://quera.ir/profile/">رزومه‌ساز</a><a class="item link" href="https://quera.ir/accounts/settings/personal">تنظیمات حساب شخصی</a><div class="divider"></div><div class="item flex link" tabindex="0" style="justify-content: space-between;">رویدادهای من<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" style="font-size: 1.4em;"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M328 112L184 256l144 144"></path></svg></div><div class="item flex link" tabindex="0" style="justify-content: space-between;">کالج‌های من<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" style="font-size: 1.4em;"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M328 112L184 256l144 144"></path></svg></div><div class="item flex link" tabindex="0" style="justify-content: space-between;">کاریابی من<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" style="font-size: 1.4em;"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M328 112L184 256l144 144"></path></svg></div><div class="divider"></div><a class="item link" href="https://talent.quera.ir/employer/index">به سمت بخش شرکت‌ها</a><form method="post" action="https://quera.ir/accounts/logout"><input type="hidden" name="csrfmiddlewaretoken" value="uf0ApGS9yyTXKO9zfp3cLkbjr1Fd1Ac5ijsOOzciAY6KEn8YF8CKk0cqk1w0GNH4"><div class="item link" tabindex="0">خروج</div></form></div></div></div></div></header><script id="__qnav_data__" type="application/json">{"user": {"is_authenticated": true, "username": "jcrd36", "full_name": "سید محمد امین دادگر", "email": "dadgaramin96@gmail.com", "avatar": "/media/CACHE/images/public/avatars/9566371659174c7287cf353c79af5add/98cd9dee08b00b60273343a0ed68db91.jpg", "is_employer": false}, "colleges": [{"id": 4499, "name": "دورهمی تمرین مبانی برنامه‌نویسی", "url": "/college/land/college/4499/"}], "events": [], "notifications": {"has_unread": false, "items": [{"id": 768505, "has_link": true, "deleted": false, "timestamp": "۲۰ اسفند ۱۳۹۸", "verb": "اخبار جدید کوئرا کالج را در بلاگ کوئرا بخوانید", "description": "فرصت‌هاش ویژه‌ی شغلی Quera Career Days برای افرادی که دوره‌های کوئرا کالج را تمام کرده‌اند، و امکان تمدید زمان دوره‌ها"}, {"id": 707728, "has_link": false, "deleted": false, "timestamp": "۲۸ دی ۱۳۹۸", "verb": "اضافه شدن ایموجی به فرصت‌های شغلی", "description": "از این پس می‌توانید با استفاده از ایموجی در صفحه‌ی هر فرصت شغلی، احساستان را راجع به آن با سایر توسعه‌دهندگان به اشتراک بگذارید!"}, {"id": 626731, "has_link": true, "deleted": false, "timestamp": "۲۴ دی ۱۳۹۸", "verb": "دریافت هفتگی فرصت‌های  شغلی مرتبط", "description": "از این پس می‌توانید فرصت‌های شغلی مرتبط با علاقه‌مندی‌هایتان را به صورت هفتگی و از طریق ایمیل دریافت کنید؛ برای فعال‌سازی کلیک کنید!"}]}}</script><script id="__qnav_urls__" type="application/json">{"talent_subdomain_base_url": "https://talent.quera.ir", "login": "/accounts/login", "logout": "/accounts/logout", "register": "/accounts/registration", "profile": "/profile/", "applied_jobs": "/careers/explore/jobs/applied", "pinned_jobs": "/careers/explore/jobs/pinned", "personal_settings": "/accounts/settings/personal", "dashboard": "/dashboard"}</script><script type="text/javascript" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/navbar.0-be58d5bde602.js.download"></script>
+
+    
+
+    
+        <nav class="ui borderless menu" id="nav-bar">
+            <div class="ui fluid container">
+                <div class="breadcrumb item">
+                    
+    
+                        <a href="https://quera.ir/" class="section">خانه</a>
+                    
+    <i class="left angle icon divider"></i>
+    
+        
+            <a href="https://quera.ir/contest/" class="section">مسابقات</a>
+        
+        <i class="left angle icon divider"></i>
+        
+    
+    <a href="https://quera.ir/contest/assignments/31720/problems" title="ماین‌پرابلم یونیدرو (تحلیل داده)" class="section">ماین‌پرابلم یونیدرو (تحلیل داده)</a>
+    
+    
+
+                </div>
+                
+    
+        <div class="right menu">
+            <div class="item">
+                <div id="timer"></div>
+                <span class="ui mini red label extra-time" style="display: none">زمان<br>اضافه</span>
+            </div>
+            
+            
+        </div>
+    
+
+            </div>
+        </nav>
+    
+    <div dir="ltr" id="qu-hj"></div>
+
+    <script type="text/javascript" charset="utf-8">
+        quera = {};
+        quera.finish_time = moment('0');
+        quera.extra_time = moment.duration(0, 'seconds');
+        quera.server_first_time = '2021-08-27T18:02:19.293750+04:30';
+        quera.offset = moment('2021-08-27T18:02:19.294302+04:30').diff(moment());
+        quera.time = moment();
+        quera.times = [];
+        
+    </script>
+    
+        <script>
+            
+        </script>
+    
+    <div id="body_container">
+        
+    
+
+    
+        <div id="a-sidebar-menu-wrapper" style="min-height: 426px;">
+            <div class="ui sticky large vertical fluid menu fixed top" id="a-sidebar-menu" style="left: 1270.2px; width: 250px !important; height: 426px !important; margin-top: 0px;">
+                
+
+
+
+
+    <div class="ui accordion qu-accordion item">
+        <div class="title active" style="padding: 0;">
+            سؤالات
+            <i class="dropdown icon"></i>
+        </div>
+        <div class="content active a-sidebar-inner-menu">
+            <div class="ui secondary vertical fluid menu" id="a-sidebar-problems">
+                
+                    <a href="https://quera.ir/contest/assignments/31720/problems/106619" class="item problem_menu_item " data-pid="106619">
+                        
+                        مقدمه
+                        <div style="flex: 1"></div>
+                        
+                        
+                            
+                                
+                            
+                        
+                    </a>
+                
+                    <a href="https://quera.ir/contest/assignments/31720/problems/104013" class="item problem_menu_item active" data-pid="104013">
+                        
+                        شغل جدید
+                        <div style="flex: 1"></div>
+                        
+                        
+                            
+                                
+                                    <div class="ui green label qu-popup" data-content="امتیاز" data-position="top center" data-variation="small">
+                                        ۱۰۰
+                                    </div>
+                                
+                            
+                        
+                    </a>
+                
+                    <a href="https://quera.ir/contest/assignments/31720/problems/104015" class="item problem_menu_item " data-pid="104015">
+                        
+                        سنجش کیفیت
+                        <div style="flex: 1"></div>
+                        
+                        
+                            
+                                
+                                    <div class="ui basic blue label qu-popup" data-content="امتیاز" data-position="top center" data-variation="small">
+                                        ۱۰۰۰
+                                    </div>
+                                
+                            
+                        
+                    </a>
+                
+                    <a href="https://quera.ir/contest/assignments/31720/problems/108151" class="item problem_menu_item " data-pid="108151">
+                        
+                        توضیحات تکمیلی
+                        <div style="flex: 1"></div>
+                        
+                        
+                            
+                                
+                            
+                        
+                    </a>
+                
+                    <a href="https://quera.ir/contest/assignments/31720/problems/104021" class="item problem_menu_item " data-pid="104021">
+                        
+                        گزارش‌ نویسی
+                        <div style="flex: 1"></div>
+                        
+                        
+                            
+                                
+                                    <div class="ui basic blue label qu-popup" data-content="امتیاز" data-position="top center" data-variation="small">
+                                        ۴۰۰
+                                    </div>
+                                
+                            
+                        
+                    </a>
+                
+                    <a href="https://quera.ir/contest/assignments/31720/problems/104023" class="item problem_menu_item " data-pid="104023">
+                        
+                        بارگذاری کد سوالات
+                        <div style="flex: 1"></div>
+                        
+                        
+                            
+                                
+                                    <div class="ui basic blue label qu-popup" data-content="امتیاز" data-position="top center" data-variation="small">
+                                        ۰
+                                    </div>
+                                
+                            
+                        
+                    </a>
+                
+            </div>
+        </div>
+
+        <div style="position: absolute; top: .7em; left: 1em;">
+            
+            
+            
+                <a class="ui blue mini icon button qu-popup" target="_blank" rel="noopener" href="https://quera.ir/contest/assignments/31720/print" data-content="چاپ همه سؤالات" data-variation="mini" data-position="top center">
+                    <i class="print icon"></i>
+                </a>
+            
+            
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var assignment_id = 31720;
+            
+        });
+    </script>
+
+
+
+    <a href="https://quera.ir/contest/assignments/31720/submissions/all" class="item ">
+        همه ارسال‌ها</a>
+    <a href="https://quera.ir/contest/assignments/31720/submissions/final" class="item ">
+        ارسال‌های نهایی</a>
+
+
+
+    <a href="https://quera.ir/contest/assignments/31720/scoreboard/" class="item ">جدول امتیازات</a>
+
+
+
+    <a class="item " href="https://quera.ir/contest/clarification/31720/">سؤال بپرسید</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                $("#a-sidebar-menu").sticky({ context: "#a-container" });
+            });
+        </script>
+    
+
+    <div id="a-container">
+        <div class="mw-1130">
+            
+                <div class="ui small borderless stackable menu" style="background-color: #f8f8f9; display: none;" id="grant-notification-msg">
+                    <div class="item">
+                        در صورتی که مایلید اطلاعیه‌های مسابقه را به صورت زنده دریافت کنید، روی دکمه کلیک کنید.
+                    </div>
+                    <div class="right menu">
+                        <div class="item">
+                            <button class="ui blue button" id="grant-notification-btn" style="margin: 0 auto;">
+                                فعال کردن اطلاعیه‌ها
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/contest_clar_websocket.0-aaae3526d219.js.download"></script>
+                <script>
+                    init_clar_websocket({
+                        socket_url: "quera.ir",
+                        assignment_id: "31720",
+                        session_key: "ud6todiy1rjhu7sqsur138ponahbzzn4",
+                        logo_url: "https://static.quera.ir/images/logo/logo-q.0-191a914662ba.png",
+                        websocket_connection_delay: 0
+                    });
+                </script>
+            
+
+            
+    
+    
+        <div class="mw-700" style="width: 100%">
+            
+
+            
+
+<div class="ui segment qu-problem-segment">
+    <div id="problem-menu">
+        <a target="_blank" href="https://quera.ir/contest/assignments/31720/problems/104013/print" rel="noopener">
+            <i class="print link blue icon qu-popup" data-content="چاپ" data-position="top center" data-variation="tiny"></i>
+        </a>
+        
+        
+        
+    </div>
+
+    
+
+<div style="display: none;" id="description_md-104013">**فرض کنید** که [کاپیتان شپرد](https://en.wikipedia.org/wiki/Commander_Shepard)، فرمانده [سفینه فضایی نرماندی](https://en.wikipedia.org/wiki/Normandy_%28Mass_Effect%29)، **شما** را به عنوان **دانشمند داده** به خدمه سفینه اضافه کرده‌است تا به‌او در انجام ماموریت‌های اکتشافی در منظومه [هلیوس](https://masseffect.fandom.com/wiki/Heleus_Cluster) کمک کنید.
+
+![سفینه فضایی نرماندی](https://bayanbox.ir/view/4475939435108208580/Normandy.jpg)
+
+در یکی از ماموریت‌های اکتشافی، پیام زیر به سفینه مخابره می‌شود:
+
+&gt; طبق اطلاعات بدست آمده توسط کاوشگران، معادن متعددی در سیاره ایوس وجود دارند. با توجه به نزدیک بودن سفینه به این سیاره، اقدام به بررسی تصاویر حفاری‌های آن معادن کرده و نتایج را اعلام کنید. مراحل مختلف انجام این ماموریت به همراه توضیحات مربوطه، به شما ارسال می‌گردد.
+
+برای آشنایی بیشتر با مفهوم حفاری اکتشافی، [این ویدیو](https://aparat.com/v/6cpmP) را تماشا کنید.
+
+# زیرساخت و نحوه دریافت دادگان
+این مسابقه دارای ۳ سوال می‌باشد و شما می‌توانید دادگان این مسابقه (یکسان برای تمامی سوال‌ها) را از **یکی** از لینک‌های زیر دانلود کنید:
+
++ [لینک گوگل درایو ۱](https://drive.google.com/file/d/1fSzUMCJHx3JHwrDpY_Qz6KI1zIUv3BnC)
++ [لینک گوگل درایو ۲](https://drive.google.com/file/d/19p3qtGNlc_p12bi3wnbXtELUAR7CE6p8)
++ [لینک گوگل درایو ۳](https://drive.google.com/file/d/1ERHzuZiE7--FSFJqp181b9sApnOrQTXV)
++ [لینک دراپ‌باکس](https://www.dropbox.com/s/w1ekxxhss6z0u0i) 
++ [لینک کوئرا](http://185.231.59.231/data.zip)
+
+پیش از دانلود این دادگان، بایستی که محیط برنامه‌نویسی لازم برای محاسبات را آماده کنید. 
+در صورتی که می‌خواهید با استفاده از زبان برنامه‌نویسی پایتون و کتابخانه‌های موجود در آن، در این مسابقه شرکت کنید. می‌توانید که از سامانه گوگل کُلَب ([اینجا](https://colab.research.google.com)) استفاده کنید. 
+
+بدین صورت نیازی نیست که شما دادگان این مسابقه (حدود ۱.۵ گیگابایت داده) را روی کامپیوتر خود دانلود کنید. همچنین گوگل کُلَب این امکان را به شما می‌دهد که از قابلیت‌های `GPU` و `TPU` آن به رایگان استفاده کرده و سرعت محاسبات خود را به طور قابل ملاحظه‌ای افزایش دهید. **پیشنهاد** می‌شود که ابتدا کُد خود را در حالت `CPU` توسعه دهید و **فقط** هنگامی که می‌ خواهید شروع به آموزش دادن مُدل خود کنید، قابلیت `GPU` یا `TPU` را فعال کنید، بدین صورت به صورت بهینه از منابع استفاده می‌شود.
+
+اگر اولین باری است که با گوگل کُلَب آشنا می‌شوید. پیشنهاد می‌شود راهنمای فارسی کار با آن را از [اینجا](https://virgool.io/@baran.science/%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%A8%D8%A7-google-colab-%DA%A9%D8%A7%D8%B1-%DA%A9%D9%86%DB%8C%D9%85-mihfp5n8mdta) به دقت مطالعه کنید. توجه‌ داشته‌ باشید که برای استفاده از گوگل کُلَب، شما نیازمند به داشتن ایمیل `gmail` می‌باشید و قابلیت‌های ارائه شده در نسخه رایگان آن، برای انجام این مسابقه کافی است.  همچنین نیازی به استفاده از فیلترشکن برای دسترسی به آن فعلا نیست!
+
+در صورتی که از لینک **گوگل درایو** برای دانلود دادگان در گوگل کُلب استفاده می‌کنید، دستور `gdown` می‌تواند به شما کمک زیادی بکند. برای مطالعه بیشتر، [اینجا](https://github.com/wkentaro/gdown) را ببینید.
+
+همچنین برای دانلود دادگان از لینک **دراپ‌باکس** و یا لینک **کوئرا** در گوگل کُلب می‌توانید از دستور `wget` استفاده کنید. برای مطالعه بیشتر، [اینجا](https://www.pair.com/support/kb/paircloud-downloading-files-with-wget/) را ببینید.
+
+توجه داشته باشید که داخل گوگل کُلب، باید قبل از اجرای دستور `gdown` یا `wget`، علامت `!` قرار دهید. به مثال‌های زیر نگاه کنید.
+
+```
+! wget &lt;URL&gt;
+```
+یا
+
+```
+! gdown --id &lt;GID&gt;
+```
+برای استفاده از دستور `gdown` و تشخیص مقدار `&lt;GID&gt;`، ابتدا یک لینک گوگل درایو، مانند آدرس https://drive.google.com/file/d/1fSzUMCJHx3JHwrDpY_Qz6KI1zIUv3BnC را باز می‌کنید. سپس مقدار بعد از `d/` تا مقدار قبل از `/` بعدی را به عنوان `&lt;GID&gt;` آن انتخاب کرده (به مثال زیر نگاه کنید):
+
+```
+! gdown --id 1fSzUMCJHx3JHwrDpY_Qz6KI1zIUv3BnC
+```
+
+همچنین در صورتی که نمی خواهید از گوگل کُلب استفاده کنید و می‌خواهید محاسبات را در کامپیوتر شخصی خود یا زیرساخت دیگری انجام دهید، می‌توانید دادگان را دانلود و از حالت فشرده خارج کنید. 
+
+توجه داشته باشید که محدودیتی در زبان برنامه‌نویسی مورد استفاده برای این مسابقه وجود **ندارد**.
+
+# توضیح دادگان 
+حفاری‌های اکتشافی به چاه‌هایی گفته می‌شود که برای بررسی‌های بیشتر در زمین حفر می‌شوند. این حفاری‌ها در اندازه‌های مشخصی انجام شده و مغزه‌های حاصل از حفاری (گمانه) در جعبه‌های مشخصی (جعبه‌مغزه) برای تحلیل‌های بعدی قرار می‌گیرند. 
+
+برای مطالعه بیشتر در مورد مفهوم گمانه، ویکی‌پدیای آن را از [اینجا](https://en.wikipedia.org/wiki/Borehole) مطالعه کنید. همچنین در [این ویدیو](https://aparat.com/v/mlT8S)، یک نمونه واقعی از حفاری اکتشافی و نحوه بدست آمدن گمانه‌ نشان داده‌ شده‌است.
+
+&lt;details class="yellow"&gt;
+&lt;summary&gt;
+**توجه**
+&lt;/summary&gt;
+**حتما** لینک‌های مقالات یا ویدیو‌هایی که در صورت سوالات، برای شما قرار داده شده‌است را به دقت مطالعه و مشاهده کنید. بدین صورت، ابعاد مختلف مسئله برای شما روشن می‌‌گردد.
+&lt;/details&gt;
+
+طول جعبه مغزه‌ها ۱.۱ متر است و هر جعبه دارای تعداد مشخصی ردیف است. بعد از اینکه مغزه‌ها داخل جعبه قرار گرفت، از جعبه مغزه‌ها تصویربرداری شده و از این تصاویر به عنوان شناسنامه معدن یاد می‌شود (علت این امر طول عمر بالای معدن و سختی نگهداری از جعبه مغزه‌ها می‌باشد. در نتیجه، تصویربرداری و رجوع به تصاویر ساده‌تر و کاربردی‌تر خواهدبود).
+
+![یک نمونه تصویر جعبه مغزه](https://bayanbox.ir/view/2943411491172718264/box-intro.jpg)
+
+هر جعبه دارای اطلاعات مختلفی است که توضیحات بخش‌های مورد نیاز آن، در جدول زیر آورده شده‌است.
+
+|      نام    |     توضیح       |
+|:------------------:|:------------------:|
+|Run|حفاری‌ها به صورت مرحله‌ای انجام می‌پذیرد و در هر مرحله مقداری از مغزه بعد از حفاری استخراج شده و در ردیف‌های جعبه مغزه قرار می‌گیرد. مغزه‌‌های هر `Run` به وسیله یک چوب‌ که به صورت عمودی قرار داده شده‌است از `Run` بعدی در ردیف‌ها جدا می‌گردد. |
+|From|عمق شروع حفاری هر `Run` نسبت به سطح زمین که به متر گزارش شده‌است. توجه داشته باشید که سطح زمین دارای عمق صفر می‌باشد|
+|To|عمق انتهایی هر `Run` حفاری که به متر گزارش شده‌است.|
+
+توجه داشته‌ باشید که حفاری هر گمانه در چند `Run` صورت می‌گیرد. فرض کنید که قرار است تا عمق ۲۰۰ متری حفاری صورت بپذیرد، در هر `Run` از حفاری، متراژ مشخصی حفر می‌شود، سپس نتایج حفاری، در اولین ردیف خالی (از بالا به پایین) موجود در جعبه از چپ به راست قرار می‌گیرند. اگر که نتایج یک `Run` در یک ردیف جا نشد، ادامه آن، در ردیف بعدی (پایین‌) و از چپ به راست قرار داده می‌شود. انتهای مغزه‌های قرار داده‌ شده برای یک `Run` نیز با استفاده از یک چوب عمودی مشخص می‌شود. نتایج حفاری `Run` بعدی در ادامه همان ردیف و بعد از آن چوب عمودی می‌آید (به منظور ساده‌سازی این مسابقه، تمامی چوب‌های، تمامی عکس‌ها در تمامی پوشه‌ها با رنگ **بنفش** رنگ‌ آمیزی شده‌اند).
+
+&lt;details class="yellow"&gt;
+&lt;summary&gt;
+**توجه**
+&lt;/summary&gt;
+میزان طول حفاری شده در هر `Run` می‌تواند با یکدیگر متفاوت باشد.
+&lt;/details&gt;
+
+ بعد از دریافت دادگان و ‍‍`unzip` کردن آن‌‌، شما پوشه‌های زیر را خواهید داشت:
+
+|      نام پوشه   |     توضیح       |
+|:------------------:|:------------------:|
+|train|پوشه حاوی عکس‌ دادگان آموزش |
+|test-rqd|پوشه حاوی عکس دادگان آزمایش سوال **سنجش کیفیت** |
+
+هر عکس، با ساختار "شماره‌جعبه-شناسه‌گمانه-شناسه‌معدن" نام‌گذاری شده‌است. 
+
+به عنوان مثال عکس `M3-BH130-1.jpg` متعلق به معدن ‍‍`M3‍`، گمانه `BH130` و جعبه اول آن است.
+
+# صورت مسئله
+در ابتدای کار، شما می‌خواهید با بررسی اولیه به اکتشاف **فقط** در مجموعه دادگان آموزش (پوشه `train`) بپردازید و به سوالات زیر پاسخ بدهید (مثال خروجی هر سوال، در زیر آن آورده شده‌است).
+
+1. تعداد عکس‌ها چند است؟
+```
+100
+```
+2. تعداد گمانه‌ها چند است؟
+```
+50
+```
+3. طول بزرگترین `Run` موجود در فایل `from-to-rqd.xlsx`چند است؟ (فقط قسمت عدد صحیح)
+```
+34
+```
+4. کدام گمانه موجود در فایل `from-to-rqd.xlsx`، دارای بیشترین عمق (`To`) می‌باشد؟ (جواب خود را با ساختار "شناسه‌گمانه-شناسه‌معدن" همانند نمونه زیر، قرار دهید)
+```
+M3-BH130
+```
+
+اگر که فایل اکسل `from-to-rqd.xlsx`، به تنهایی برای شما گُنگ است. برای توضیحات بیشتر در مورد این فایل، مرحله بعدی (**سنجش کیفیت**) را نیز مطالعه کنید.
+
+این مرحله در مجموع، شامل ۴ سوال (هر سوال، ۲۵ امتیاز) می‌باشد. در صورتی که به تمامی سوالات پاسخ صحیح بدهید، بایستی ۱۰۰ امتیاز از این مرحله کسب کنید.
+
+# ارسال پاسخ
+برای ارسال پاسخ ، جواب هر سوال را مشابه‌ مثال، در یک سطر از فایل text بنویسید. در نهایت یک فایل text چهار خطی با نام **output.txt** را برای ما بارگذاری کنید (جواب سوال اول در خط اول، سوال دوم در خط دوم، سوال سوم در خط سوم و سوال چهارم در خط چهارم).
+
+**_در صورتی که جواب سوالی را نمی‌دانید در سطر مربوطه ۱- وارد کنید._**
+
+## نمونه خروجی
+```
+100
+50
+34
+M3-BH130
+```
+&lt;details class="green"&gt;
+&lt;summary&gt;
+*توضیحات*
+&lt;/summary&gt;
+در خط *i* ام جواب سوال *i* ام نوشته شده است.
+&lt;/details&gt;
+
+&lt;details class="yellow"&gt;
+&lt;summary&gt;
+**هشدار**
+&lt;/summary&gt;
+اگر نام فایل شما و ساختار محتویات آن، همانند آن‌چه در صورت سوال ذکر شده‌است، **نباشد**. سامانه داوری به شما **صفر** امتیاز می‌دهد.
+&lt;/details&gt;</div>
+<div>
+    <div class="ui center aligned fluid container">
+        <h1>شغل جدید</h1>
+    </div>
+    <br>
+    <div class="description-html" id="description_html-104013"><p dir="auto"><strong>فرض کنید</strong> که <a href="https://en.wikipedia.org/wiki/Commander_Shepard" target="_blank">کاپیتان شپرد</a>، فرمانده <a href="https://en.wikipedia.org/wiki/Normandy_%28Mass_Effect%29" target="_blank">سفینه فضایی نرماندی</a>، <strong>شما</strong> را به عنوان <strong>دانشمند داده</strong> به خدمه سفینه اضافه کرده‌است تا به‌او در انجام ماموریت‌های اکتشافی در منظومه <a href="https://masseffect.fandom.com/wiki/Heleus_Cluster" target="_blank">هلیوس</a> کمک کنید.</p>
+<p dir="auto"><img src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/Normandy.jpg" alt="سفینه فضایی نرماندی" style="cursor: pointer;"></p>
+<p dir="auto">در یکی از ماموریت‌های اکتشافی، پیام زیر به سفینه مخابره می‌شود:</p>
+<blockquote dir="auto">
+<p>طبق اطلاعات بدست آمده توسط کاوشگران، معادن متعددی در سیاره ایوس وجود دارند. با توجه به نزدیک بودن سفینه به این سیاره، اقدام به بررسی تصاویر حفاری‌های آن معادن کرده و نتایج را اعلام کنید. مراحل مختلف انجام این ماموریت به همراه توضیحات مربوطه، به شما ارسال می‌گردد.</p>
+</blockquote>
+<p dir="auto">برای آشنایی بیشتر با مفهوم حفاری اکتشافی، <a href="https://aparat.com/v/6cpmP" target="_blank">این ویدیو</a> را تماشا کنید.</p>
+<h1 dir="auto" id="زیرساخت-و-نحوه-دریافت-دادگان">زیرساخت و نحوه دریافت دادگان<a class="anchorLink" href="https://quera.ir/contest/assignments/31720/problems/104013#%D8%B2%DB%8C%D8%B1%D8%B3%D8%A7%D8%AE%D8%AA-%D9%88-%D9%86%D8%AD%D9%88%D9%87-%D8%AF%D8%B1%DB%8C%D8%A7%D9%81%D8%AA-%D8%AF%D8%A7%D8%AF%DA%AF%D8%A7%D9%86">🔗</a></h1>
+<p dir="auto">این مسابقه دارای ۳ سوال می‌باشد و شما می‌توانید دادگان این مسابقه (یکسان برای تمامی سوال‌ها) را از <strong>یکی</strong> از لینک‌های زیر دانلود کنید:</p>
+<ul dir="auto">
+<li><a href="https://drive.google.com/file/d/1fSzUMCJHx3JHwrDpY_Qz6KI1zIUv3BnC" target="_blank">لینک گوگل درایو ۱</a></li>
+<li><a href="https://drive.google.com/file/d/19p3qtGNlc_p12bi3wnbXtELUAR7CE6p8" target="_blank">لینک گوگل درایو ۲</a></li>
+<li><a href="https://drive.google.com/file/d/1ERHzuZiE7--FSFJqp181b9sApnOrQTXV" target="_blank">لینک گوگل درایو ۳</a></li>
+<li><a href="https://www.dropbox.com/s/w1ekxxhss6z0u0i" target="_blank">لینک دراپ‌باکس</a> </li>
+<li><a href="http://185.231.59.231/data.zip" target="_blank">لینک کوئرا</a></li>
+</ul>
+<p dir="auto">پیش از دانلود این دادگان، بایستی که محیط برنامه‌نویسی لازم برای محاسبات را آماده کنید. 
+در صورتی که می‌خواهید با استفاده از زبان برنامه‌نویسی پایتون و کتابخانه‌های موجود در آن، در این مسابقه شرکت کنید. می‌توانید که از سامانه گوگل کُلَب (<a href="https://colab.research.google.com/" target="_blank">اینجا</a>) استفاده کنید.</p>
+<p dir="auto">بدین صورت نیازی نیست که شما دادگان این مسابقه (حدود ۱.۵ گیگابایت داده) را روی کامپیوتر خود دانلود کنید. همچنین گوگل کُلَب این امکان را به شما می‌دهد که از قابلیت‌های <code dir="ltr">GPU</code> و <code dir="ltr">TPU</code> آن به رایگان استفاده کرده و سرعت محاسبات خود را به طور قابل ملاحظه‌ای افزایش دهید. <strong>پیشنهاد</strong> می‌شود که ابتدا کُد خود را در حالت <code dir="ltr">CPU</code> توسعه دهید و <strong>فقط</strong> هنگامی که می‌ خواهید شروع به آموزش دادن مُدل خود کنید، قابلیت <code dir="ltr">GPU</code> یا <code dir="ltr">TPU</code> را فعال کنید، بدین صورت به صورت بهینه از منابع استفاده می‌شود.</p>
+<p dir="auto">اگر اولین باری است که با گوگل کُلَب آشنا می‌شوید. پیشنهاد می‌شود راهنمای فارسی کار با آن را از <a href="https://virgool.io/@baran.science/%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%A8%D8%A7-google-colab-%DA%A9%D8%A7%D8%B1-%DA%A9%D9%86%DB%8C%D9%85-mihfp5n8mdta" target="_blank">اینجا</a> به دقت مطالعه کنید. توجه‌ داشته‌ باشید که برای استفاده از گوگل کُلَب، شما نیازمند به داشتن ایمیل <code dir="ltr">gmail</code> می‌باشید و قابلیت‌های ارائه شده در نسخه رایگان آن، برای انجام این مسابقه کافی است.  همچنین نیازی به استفاده از فیلترشکن برای دسترسی به آن فعلا نیست!</p>
+<p dir="auto">در صورتی که از لینک <strong>گوگل درایو</strong> برای دانلود دادگان در گوگل کُلب استفاده می‌کنید، دستور <code dir="ltr">gdown</code> می‌تواند به شما کمک زیادی بکند. برای مطالعه بیشتر، <a href="https://github.com/wkentaro/gdown" target="_blank">اینجا</a> را ببینید.</p>
+<p dir="auto">همچنین برای دانلود دادگان از لینک <strong>دراپ‌باکس</strong> و یا لینک <strong>کوئرا</strong> در گوگل کُلب می‌توانید از دستور <code dir="ltr">wget</code> استفاده کنید. برای مطالعه بیشتر، <a href="https://www.pair.com/support/kb/paircloud-downloading-files-with-wget/" target="_blank">اینجا</a> را ببینید.</p>
+<p dir="auto">توجه داشته باشید که داخل گوگل کُلب، باید قبل از اجرای دستور <code dir="ltr">gdown</code> یا <code dir="ltr">wget</code>، علامت <code dir="ltr">!</code> قرار دهید. به مثال‌های زیر نگاه کنید.</p>
+<div class="code-toolbar"><pre class="code-block language-undefined" dir="ltr"><code data-filename="undefined" class=" language-undefined">! wget &lt;URL&gt;</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div><p dir="auto">یا</p>
+<div class="code-toolbar"><pre class="code-block language-undefined" dir="ltr"><code data-filename="undefined" class=" language-undefined">! gdown --id &lt;GID&gt;</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div><p dir="auto">برای استفاده از دستور <code dir="ltr">gdown</code> و تشخیص مقدار <code dir="ltr">&lt;GID&gt;</code>، ابتدا یک لینک گوگل درایو، مانند آدرس <a href="https://drive.google.com/file/d/1fSzUMCJHx3JHwrDpY_Qz6KI1zIUv3BnC" target="_blank">https://drive.google.com/file/d/1fSzUMCJHx3JHwrDpY_Qz6KI1zIUv3BnC</a> را باز می‌کنید. سپس مقدار بعد از <code dir="ltr">d/</code> تا مقدار قبل از <code dir="ltr">/</code> بعدی را به عنوان <code dir="ltr">&lt;GID&gt;</code> آن انتخاب کرده (به مثال زیر نگاه کنید):</p>
+<div class="code-toolbar"><pre class="code-block language-undefined" dir="ltr"><code data-filename="undefined" class=" language-undefined">! gdown --id 1fSzUMCJHx3JHwrDpY_Qz6KI1zIUv3BnC</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div><p dir="auto">همچنین در صورتی که نمی خواهید از گوگل کُلب استفاده کنید و می‌خواهید محاسبات را در کامپیوتر شخصی خود یا زیرساخت دیگری انجام دهید، می‌توانید دادگان را دانلود و از حالت فشرده خارج کنید.</p>
+<p dir="auto">توجه داشته باشید که محدودیتی در زبان برنامه‌نویسی مورد استفاده برای این مسابقه وجود <strong>ندارد</strong>.</p>
+<h1 dir="auto" id="توضیح-دادگان">توضیح دادگان<a class="anchorLink" href="https://quera.ir/contest/assignments/31720/problems/104013#%D8%AA%D9%88%D8%B6%DB%8C%D8%AD-%D8%AF%D8%A7%D8%AF%DA%AF%D8%A7%D9%86">🔗</a></h1>
+<p dir="auto">حفاری‌های اکتشافی به چاه‌هایی گفته می‌شود که برای بررسی‌های بیشتر در زمین حفر می‌شوند. این حفاری‌ها در اندازه‌های مشخصی انجام شده و مغزه‌های حاصل از حفاری (گمانه) در جعبه‌های مشخصی (جعبه‌مغزه) برای تحلیل‌های بعدی قرار می‌گیرند.</p>
+<p dir="auto">برای مطالعه بیشتر در مورد مفهوم گمانه، ویکی‌پدیای آن را از <a href="https://en.wikipedia.org/wiki/Borehole" target="_blank">اینجا</a> مطالعه کنید. همچنین در <a href="https://aparat.com/v/mlT8S" target="_blank">این ویدیو</a>، یک نمونه واقعی از حفاری اکتشافی و نحوه بدست آمدن گمانه‌ نشان داده‌ شده‌است.</p>
+<details class="yellow" dir="auto">
+<summary dir="auto">
+<strong>توجه</strong>
+</summary>
+<p dir="auto"><strong>حتما</strong> لینک‌های مقالات یا ویدیو‌هایی که در صورت سوالات، برای شما قرار داده شده‌است را به دقت مطالعه و مشاهده کنید. بدین صورت، ابعاد مختلف مسئله برای شما روشن می‌‌گردد.</p>
+</details>
+<p dir="auto">طول جعبه مغزه‌ها ۱.۱ متر است و هر جعبه دارای تعداد مشخصی ردیف است. بعد از اینکه مغزه‌ها داخل جعبه قرار گرفت، از جعبه مغزه‌ها تصویربرداری شده و از این تصاویر به عنوان شناسنامه معدن یاد می‌شود (علت این امر طول عمر بالای معدن و سختی نگهداری از جعبه مغزه‌ها می‌باشد. در نتیجه، تصویربرداری و رجوع به تصاویر ساده‌تر و کاربردی‌تر خواهدبود).</p>
+<p dir="auto"><img src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/box-intro.jpg" alt="یک نمونه تصویر جعبه مغزه" style="cursor: pointer;"></p>
+<p dir="auto">هر جعبه دارای اطلاعات مختلفی است که توضیحات بخش‌های مورد نیاز آن، در جدول زیر آورده شده‌است.</p>
+<table dir="auto" class="ui unstackable table">
+<thead>
+<tr>
+<th align="center">نام</th>
+<th align="center">توضیح</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Run</td>
+<td align="center">حفاری‌ها به صورت مرحله‌ای انجام می‌پذیرد و در هر مرحله مقداری از مغزه بعد از حفاری استخراج شده و در ردیف‌های جعبه مغزه قرار می‌گیرد. مغزه‌‌های هر <code dir="ltr">Run</code> به وسیله یک چوب‌ که به صورت عمودی قرار داده شده‌است از <code dir="ltr">Run</code> بعدی در ردیف‌ها جدا می‌گردد.</td>
+</tr>
+<tr>
+<td align="center">From</td>
+<td align="center">عمق شروع حفاری هر <code dir="ltr">Run</code> نسبت به سطح زمین که به متر گزارش شده‌است. توجه داشته باشید که سطح زمین دارای عمق صفر می‌باشد</td>
+</tr>
+<tr>
+<td align="center">To</td>
+<td align="center">عمق انتهایی هر <code dir="ltr">Run</code> حفاری که به متر گزارش شده‌است.</td>
+</tr>
+</tbody></table>
+<p dir="auto">توجه داشته‌ باشید که حفاری هر گمانه در چند <code dir="ltr">Run</code> صورت می‌گیرد. فرض کنید که قرار است تا عمق ۲۰۰ متری حفاری صورت بپذیرد، در هر <code dir="ltr">Run</code> از حفاری، متراژ مشخصی حفر می‌شود، سپس نتایج حفاری، در اولین ردیف خالی (از بالا به پایین) موجود در جعبه از چپ به راست قرار می‌گیرند. اگر که نتایج یک <code dir="ltr">Run</code> در یک ردیف جا نشد، ادامه آن، در ردیف بعدی (پایین‌) و از چپ به راست قرار داده می‌شود. انتهای مغزه‌های قرار داده‌ شده برای یک <code dir="ltr">Run</code> نیز با استفاده از یک چوب عمودی مشخص می‌شود. نتایج حفاری <code dir="ltr">Run</code> بعدی در ادامه همان ردیف و بعد از آن چوب عمودی می‌آید (به منظور ساده‌سازی این مسابقه، تمامی چوب‌های، تمامی عکس‌ها در تمامی پوشه‌ها با رنگ <strong>بنفش</strong> رنگ‌ آمیزی شده‌اند).</p>
+<details class="yellow" dir="auto">
+<summary dir="auto">
+<strong>توجه</strong>
+</summary>
+<p dir="auto">میزان طول حفاری شده در هر <code dir="ltr">Run</code> می‌تواند با یکدیگر متفاوت باشد.</p>
+</details>
+<p dir="auto">بعد از دریافت دادگان و ‍‍<code dir="ltr">unzip</code> کردن آن‌‌، شما پوشه‌های زیر را خواهید داشت:</p>
+<table dir="auto" class="ui unstackable table">
+<thead>
+<tr>
+<th align="center">نام پوشه</th>
+<th align="center">توضیح</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">train</td>
+<td align="center">پوشه حاوی عکس‌ دادگان آموزش</td>
+</tr>
+<tr>
+<td align="center">test-rqd</td>
+<td align="center">پوشه حاوی عکس دادگان آزمایش سوال <strong>سنجش کیفیت</strong></td>
+</tr>
+</tbody></table>
+<p dir="auto">هر عکس، با ساختار "شماره‌جعبه-شناسه‌گمانه-شناسه‌معدن" نام‌گذاری شده‌است.</p>
+<p dir="auto">به عنوان مثال عکس <code dir="ltr">M3-BH130-1.jpg</code> متعلق به معدن ‍‍<code dir="ltr">M3‍</code>، گمانه <code dir="ltr">BH130</code> و جعبه اول آن است.</p>
+<h1 dir="auto" id="صورت-مسئله">صورت مسئله<a class="anchorLink" href="https://quera.ir/contest/assignments/31720/problems/104013#%D8%B5%D9%88%D8%B1%D8%AA-%D9%85%D8%B3%D8%A6%D9%84%D9%87">🔗</a></h1>
+<p dir="auto">در ابتدای کار، شما می‌خواهید با بررسی اولیه به اکتشاف <strong>فقط</strong> در مجموعه دادگان آموزش (پوشه <code dir="ltr">train</code>) بپردازید و به سوالات زیر پاسخ بدهید (مثال خروجی هر سوال، در زیر آن آورده شده‌است).</p>
+<ol dir="auto">
+<li>تعداد عکس‌ها چند است؟<div class="code-toolbar"><pre class="code-block language-undefined" dir="ltr"><code data-filename="undefined" class=" language-undefined">100</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div></li>
+<li>تعداد گمانه‌ها چند است؟<div class="code-toolbar"><pre class="code-block language-undefined" dir="ltr"><code data-filename="undefined" class=" language-undefined">50</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div></li>
+<li>طول بزرگترین <code dir="ltr">Run</code> موجود در فایل <code dir="ltr">from-to-rqd.xlsx</code>چند است؟ (فقط قسمت عدد صحیح)<div class="code-toolbar"><pre class="code-block language-undefined" dir="ltr"><code data-filename="undefined" class=" language-undefined">34</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div></li>
+<li>کدام گمانه موجود در فایل <code dir="ltr">from-to-rqd.xlsx</code>، دارای بیشترین عمق (<code dir="ltr">To</code>) می‌باشد؟ (جواب خود را با ساختار "شناسه‌گمانه-شناسه‌معدن" همانند نمونه زیر، قرار دهید)<div class="code-toolbar"><pre class="code-block language-undefined" dir="ltr"><code data-filename="undefined" class=" language-undefined">M3-BH130</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div></li>
+</ol>
+<p dir="auto">اگر که فایل اکسل <code dir="ltr">from-to-rqd.xlsx</code>، به تنهایی برای شما گُنگ است. برای توضیحات بیشتر در مورد این فایل، مرحله بعدی (<strong>سنجش کیفیت</strong>) را نیز مطالعه کنید.</p>
+<p dir="auto">این مرحله در مجموع، شامل ۴ سوال (هر سوال، ۲۵ امتیاز) می‌باشد. در صورتی که به تمامی سوالات پاسخ صحیح بدهید، بایستی ۱۰۰ امتیاز از این مرحله کسب کنید.</p>
+<h1 dir="auto" id="ارسال-پاسخ">ارسال پاسخ<a class="anchorLink" href="https://quera.ir/contest/assignments/31720/problems/104013#%D8%A7%D8%B1%D8%B3%D8%A7%D9%84-%D9%BE%D8%A7%D8%B3%D8%AE">🔗</a></h1>
+<p dir="auto">برای ارسال پاسخ ، جواب هر سوال را مشابه‌ مثال، در یک سطر از فایل text بنویسید. در نهایت یک فایل text چهار خطی با نام <strong>output.txt</strong> را برای ما بارگذاری کنید (جواب سوال اول در خط اول، سوال دوم در خط دوم، سوال سوم در خط سوم و سوال چهارم در خط چهارم).</p>
+<p dir="auto"><strong><em>در صورتی که جواب سوالی را نمی‌دانید در سطر مربوطه ۱- وارد کنید.</em></strong></p>
+<h2 dir="auto" id="نمونه-خروجی">نمونه خروجی<a class="anchorLink" href="https://quera.ir/contest/assignments/31720/problems/104013#%D9%86%D9%85%D9%88%D9%86%D9%87-%D8%AE%D8%B1%D9%88%D8%AC%DB%8C">🔗</a></h2>
+<div class="code-toolbar"><pre class="code-block language-undefined" dir="ltr"><code data-filename="undefined" class=" language-undefined">100
+50
+34
+M3-BH130</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div><details class="green" dir="auto">
+<summary dir="auto">
+<em>توضیحات</em>
+</summary>
+<p dir="auto">در خط <em>i</em> ام جواب سوال <em>i</em> ام نوشته شده است.</p>
+</details>
+<details class="yellow" dir="auto">
+<summary dir="auto">
+<strong>هشدار</strong>
+</summary>
+<p dir="auto">اگر نام فایل شما و ساختار محتویات آن، همانند آن‌چه در صورت سوال ذکر شده‌است، <strong>نباشد</strong>. سامانه داوری به شما <strong>صفر</strong> امتیاز می‌دهد.</p>
+</details>
+<div class="ui basic modal" id="img-modal">
+            <div class="image content" style="justify-content: center; align-items: center">
+                <img class="image" style="max-width: 100%" src="https://quera.ir/contest/assignments/31720/problems/104013">
+            </div>
+        </div></div>
+</div>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        render_problem_text('description_md-104013', 'description_html-104013');
+    });
+</script>
+
+    
+        
+            <div class="ui horizontal divider">
+                ارسال پاسخ برای این سؤال
+            </div>
+            
+                <div class="ui teal message">مهلت مسابقه تمام شده است.</div>
+            
+            
+        
+    
+</div>
+
+
+
+
+
+<script src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/course_reverse.0-1beb96eb13fc.js.download"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var assignment_id = 31720;
+        let owner_type = "contest";
+        let user_token = "";
+        
+
+        
+        $('.submit-button').click(function () {
+            let submissionType = $(this).data('type');
+            $('#submission-type').val(submissionType);
+        })
+    });
+</script>
+
+
+        </div>
+    
+
+
+            
+                <script>
+                    var onFinishCallback = function() {
+                    };
+                </script>
+            
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    $(".menu-sidebar").click(function() {
+                        $(".ui.sidebar").sidebar("toggle");
+                    });
+                });
+
+                document.addEventListener("DOMContentLoaded", function() {
+                    var server_now = new Date('2021-08-27T13:32:19+00:00');
+                    var finish_time = new Date('2021-08-24T11:30:00+00:00');
+                    var extra_time = 0;
+                    var hard_finish_time = new Date(finish_time.getTime() + (extra_time * 1000));
+                    var flag = false;
+
+                    function onFinish(component) {
+                        onFinishCallback();
+                        
+                        if (flag || (extra_time < 2)) {
+                            return;
+                        }
+                        flag = true;
+                        component.time = hard_finish_time;
+                        component.tick();
+                        $(".extra-time").css("display", "block");
+                    }
+
+                    if (server_now < finish_time) {
+                        if (finish_time - server_now < 157766400000) {  
+                            qtimer(document.getElementById("timer"), finish_time, {
+                                server_time: server_now,
+                                onFinish: onFinish
+                            });
+                        }
+                    } else if (server_now < hard_finish_time) {
+                        $(".extra-time").css("display", "block");
+                        qtimer(document.getElementById("timer"), hard_finish_time, {
+                            server_time: server_now
+                        });
+                    }
+                });
+            </script>
+        </div>
+    </div>
+
+    </div>
+    
+        
+
+<style>
+    #footer {
+        background-color: white;
+        font-size: 13px;
+        padding: 1em 0;
+    }
+
+    #footer img {
+        display: block;
+    }
+
+    #footer > .container {
+        width: 100%;
+        max-width: 1160px;
+        margin: auto;
+        padding: 2em 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #footer .ft-logo {
+        text-align: center;
+        margin: 1em 3em 1em 4em;
+    }
+
+    #footer .ft-links {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 2 1 auto;
+    }
+
+    #footer .ft-links .group {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 0 auto;
+    }
+
+    #footer .ft-links .column {
+        flex: 1 0 auto;
+        padding: 1em;
+    }
+
+    #footer .ft-links .column .col-header {
+        color: #373737;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.6em;
+        margin: 0 0 0.8em;
+    }
+
+    @media only screen and (max-width: 500px) {
+        #footer .ft-links {
+            display: table;
+        }
+
+        #footer .ft-links .group {
+            display: table-row;
+        }
+
+        #footer .ft-links .column {
+            display: table-cell;
+        }
+    }
+
+    #footer .ft-links .links > .item {
+        display: block;
+        color: rgba(0, 0, 0, .5);
+        line-height: 2em;
+        white-space: nowrap;
+    }
+
+    #footer .ft-last {
+        margin: 1em 2em 0 3em;
+    }
+
+    #footer .ft-external {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer .ft-social {
+        display: flex;
+        justify-content: space-between;
+        margin: .6em 0 .1em;
+    }
+
+    #footer .ft-social svg {
+        display: block;
+        color: #989898;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    #footer .ft-social i.icon:hover {
+        color: #09c !important;
+    }
+
+    #footer .ft-copyright {
+        color: #989898;
+        font-size: .9em;
+        text-align: justify;
+    }
+
+    #footer .ft-copyright:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+</style>
+
+<div style="border-bottom: 1px solid rgba(34,36,38,.15)"></div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="ft-logo">
+            <a href="https://quera.ir/">
+                <img width="81" height="100" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/logo.0-37f748b73943.svg" alt="Quera" data-src="https://static.quera.ir/images/logo/logo.0-37f748b73943.svg">
+            </a>
+        </div>
+        <div class="ft-links">
+            <div class="group">
+                
+                    <div class="column">
+                        <div class="col-header">محصولات</div>
+                        <div class="links">
+                            <a href="https://quera.ir/college/" class="item">آموزش برنامه‌نویسی</a>
+                            <a href="https://quera.ir/magnet/jobs" class="item">آگهی‌های استخدام</a>
+                            <a href="https://quera.ir/problemset/contest" class="item">
+                                سؤالات برنامه‌نویسی
+                            </a>
+                            <a href="https://quera.ir/contest/" class="item">مسابقات</a>
+                            <a href="https://quera.ir/overview/" class="item">کلاس‌ها</a>
+                            <a href="https://quera.ir/employer/intro" class="item">پلتفرم استخدامی</a>
+                        </div>
+                    </div>
+                
+                
+                    <div class="column">
+                        <div class="col-header">منابع</div>
+                        <div class="links">
+                            <a target="_blank" rel="noopener" href="https://mag.quera.ir/" class="item">
+                                کوئرامگ توسعه‌دهندگان
+                            </a>
+                            <a target="_blank" rel="noopener" href="https://virgool.io/quera-magazine" class="item">
+                                کوئرامگ شرکت‌ها
+                            </a>
+                            <a target="_blank" rel="noopener" href="https://quera.ir/blog/" class="item">
+                                اخبار مسابقات و دوره‌ها
+                            </a>
+                            <a rel="noopener" href="https://quera.ir/magnet/calculator" class="item">
+                                ماشین‌حساب حقوق برنامه‌نویسان
+                            </a>
+                            <a target="_blank" rel="noopener" href="https://quera.ir/programming-stats/" class="item">
+                                آمار‌های دنیای برنامه‌نویسی
+                            </a>
+                            <a href="https://quera.ir/forms/xifMJX/" class="item">عضویت در خبرنامه</a>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="group">
+                
+                    <div class="column">
+                        <div class="col-header">رویداد‌ها</div>
+                        <div class="links">
+                            <a target="_blank" rel="noopener" href="https://codecup.ir/" class="item">کدکاپ</a>
+                            <a target="_blank" rel="noopener" href="https://quera.ir/talent/fair" class="item">
+                                نمایشگاه کار
+                            </a>
+                            <a target="_blank" rel="noopener" href="https://quera.ir/codeup-hackathon/" class="item">
+                                هکاتون کدآپ
+                            </a>
+                            
+                            <a target="_blank" rel="noopener" href="https://quera.ir/traceway/" class="item">تریس‌وی</a>
+                        </div>
+                    </div>
+                
+                
+                    <div class="column">
+                        <div class="col-header">با کوئرا</div>
+                        <div class="links">
+                            <a href="https://quera.ir/join" class="item">همکاری با ما</a>
+                            <a href="https://quera.ir/contact" class="item">تماس با ما</a>
+                            <a href="https://quera.ir/about" class="item">درباره ما</a>
+                            <a href="https://quera.ir/terms" class="item">قوانین و مقررات</a>
+                            <a href="https://talent.quera.ir/employer/intro/contest" class="item">حمایت از مسابقات</a>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="ft-last">
+            <div class="ft-external">
+                
+                    <div style="cursor:pointer; margin: 0 -6px">
+                        <img width="86px" height="86px" id="oeuknbqesizpwlaonbqe" onclick="window.open(&quot;https://logo.samandehi.ir/Verify.aspx?id=82942&amp;p=mcsiuiwkpfvlaodsuiwk&quot;, &quot;Popup&quot;,&quot;toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30&quot;)" alt="لوگوی ساماندهی" referrerpolicy="strict-origin" src="https://logo.samandehi.ir/logo.aspx?id=82942&amp;p=aqgwodrfbsiyshwlodrf">
+                    </div>
+                
+                
+                    <a style="margin: 0 -6px 0 -2px" aria-label="مشاهده گواهی ای‌نماد" target="_blank" rel="noopener nofollow" referrerpolicy="strict-origin" href="https://trustseal.enamad.ir/?id=57607&amp;Code=CW3qekxfHABBy5yr1YA3">
+                        <img width="80px" height="86px" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/logo.aspx" data-src="https://trustseal.enamad.ir/logo.aspx?id=57607&amp;Code=CW3qekxfHABBy5yr1YA3" alt="لوگوی ای‌نماد" id="CW3qekxfHABBy5yr1YA3" referrerpolicy="strict-origin">
+                    </a>
+                
+                <a aria-label="ورود به سایت پارس‌پک" target="_blank" rel="noopener" href="https://parspack.com/?utm_source=quera&amp;utm_medium=footer">
+                    <img width="55px" height="86px" alt="لوگوی پارس‌پک" title="کوئرا توسط سرورهای اختصاصی پارس پک پشتیبانی می‌شود." src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/parspack-vert.0-8d35cad5f532.png" data-src="https://static.quera.ir/images/parspack-vert.0-8d35cad5f532.png">
+                </a>
+            </div>
+            <div class="ft-social">
+                <a target="_blank" rel="noopener" href="https://github.com/QueraTeam" aria-label="ورود به گیت‌هاب کوئرا">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" focusable="false" class="chakra-icon css-6ey7w3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                    </svg>
+                </a>
+                <a target="_blank" rel="noopener" href="https://telegram.me/quera_ir" aria-label="ورود به تلگرام کوئرا">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" focusable="false" class="chakra-icon css-6ey7w3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
+                    </svg>
+                </a>
+                <a target="_blank" rel="noopener" href="https://twitter.com/quera_ir" aria-label="ورود به توییتر کوئرا">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false" class="chakra-icon css-6ey7w3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                    </svg>
+                </a>
+                <a target="_blank" rel="noopener" href="https://instagram.com/quera.ir" aria-label="ورود به اینستاگرام کوئرا">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" focusable="false" class="chakra-icon css-6ey7w3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                    </svg>
+                </a>
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/quera" aria-label="ورود به لینکداین کوئرا">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" focusable="false" class="chakra-icon css-6ey7w3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="ft-copyright">
+                ساخته‌شده با افتخار در ایران
+                | ۱۳۹۴ - ۱۴۰۰
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgDefer = document.getElementsByTagName("img");
+        for (let i = 0; i < imgDefer.length; i++) {
+            if (imgDefer[i].getAttribute("data-src")) {
+                imgDefer[i].setAttribute("src", imgDefer[i].getAttribute("data-src"));
+            }
+        }
+    });
+</script>
+
+    
+</div><script type="text/javascript" id="" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/retargeting.js.download"></script>
+
+<script type="text/javascript" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/quera_timer.0-cfcac0b85e9a.js.download"></script>
+
+
+
+<div style="display: none; visibility: hidden;"><script>!function(c,a,b){c.yektanetAnalyticsObject=b;c[b]=c[b]||function(){c[b].q.push(arguments)};c[b].q=c[b].q||[];var d=new Date;d=d.getFullYear().toString()+"0"+d.getMonth()+"0"+d.getDate()+"0"+d.getHours();var e=a.getElementsByTagName("script")[0];a=a.createElement("script");a.id="ua-script-yn-3147-adv";a.dataset.analyticsobject=b;a.async=1;a.type="text/javascript";a.src="https://cdn.yektanet.com/rg_woebegone/scripts_v2/yn-3147-adv/rg.complete.js?v\x3d"+d;e.parentNode.insertBefore(a,e)}(window,document,
+"yektanet");</script></div><iframe src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/fingerprint.html" style="display: none;"></iframe><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./ماین_پرابلم یونیدرو (تحلیل داده) - مسابقات - Quera_files/box-25a418976ea02a6f393fbbe77cec94bb.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
